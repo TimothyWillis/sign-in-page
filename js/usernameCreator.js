@@ -47,7 +47,14 @@ function jj() {
 }
 
 function generate_username(first_name, last_name, school_name) {
-    return `${first_name}${last_name}${school_name}`;
+
+    var first_name_char = get_first_character(first_name.toLowerCase());
+    var last_name_char = get_first_character(last_name.toLowerCase());
+    //var school_name_word = 
+    school_name = school_name.toLowerCase();
+
+
+    return `${first_name_char}${last_name_char}${school_name}`;
 }
 
 // Function to clean input and prevent XSS
