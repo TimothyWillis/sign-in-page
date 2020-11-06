@@ -1,0 +1,77 @@
+/*
+    Timothy Willis
+    2020-11-5
+    Week2 Programming Lab 
+*/
+
+/*Theme colors for the website*/
+:root {
+  --color_background: #f6f0e4;
+  --color_light_accent: #bce9ff;
+  --color_main: #3fa2b8;
+  --color_dark_accent: #a29b99;
+  --color_text: #506c82;
+  --color_error: #ff0000;
+}
+
+/* || General Styles */
+body {
+  font-family: system-ui, Arial, Helvetica, sans-serif;
+  background-color: var(--color_background);
+  color: var(--color_text);
+}
+h2 {
+  margin-left: 10%;
+  margin-right: auto;
+}
+
+/* || Form Box Styles */
+div.formbox_container {
+  border-radius: 5px;
+  background-color: var(--color_light_accent);
+  padding: 20px;
+  margin: 1% 10% 10% 10%;
+}
+form {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid var(--color_background);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="button"] {
+  width: 100%;
+  background-color: var(--color_main);
+  color: var(--color_background);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: var(--color_text);
+}
+
+/* || Logo Styles */
+.logo {
+  vertical-align: top;
+  width: 250px;
+  height: 100px;
+  margin: 20px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.error_msg {
+  color: var(--color_error);
+}

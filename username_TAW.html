@@ -1,0 +1,32 @@
+<!--
+    Timothy Willis
+    2020-11-5
+    Week2 Programming Lab 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Create Username</title>
+</head>
+<body>
+    <img class="logo" src="assets/images/logo.png">
+    <div class="formbox_container">
+        <form id="username_creation_form">
+            First Name:<br />
+            <input type="text" id="first_name"><br />
+            Last Name:<br />
+            <input type="text" id="last_name"><br />
+            School Name:<br />
+            <input type="text" id="school_name"><br />
+            <input type="button" name="button_submit" value="Create Username" onclick="button_submit_onclick()"><br />
+        </form>
+    </div>
+    <div id="username_msg_holder">
+        <h2 id="username_msg" class="hidden"></h2>
+    </div>
+    <script type="text/JavaScript" src="js/usernameCreator.js"></script>
+</body>
+</html>
