@@ -23,11 +23,13 @@ function button_submit_onclick() {
         and unhide error message  
     */
 
-
+    // Generate username from the user input
     var username = generate_username(first_name, last_name, school_name);
     
+    // Add the generated username to the HTML
     username_msg.innerHTML = `You new username is ${username}`;
     
+    // Unhide the username message
     unhide_element(username_msg);
 
 }
